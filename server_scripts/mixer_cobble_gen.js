@@ -24,7 +24,6 @@ ServerEvents.recipes(event => {
     // tuff can, but another mod in CreateVillage already has a mixing recipe (andesite + cobble + lava)
     // obsidian, diorite, granite and cobbled deepslate already have recipes (mixing or not mixing) that should be okay
     
-
     // add mixing recipes for making concrete with liquid dye and lava (which was missing from cobblegen galore)
     for (let index = 0; index < dyeFluids.length; index++) {
         event.recipes.create.mixing(
@@ -57,9 +56,9 @@ ServerEvents.recipes(event => {
     for (let index = 0; index < cobbleGenGaloreBlocks.length; index++) {
         var blockToUse = cobbleGenGaloreBlocks[index]
         event.recipes.create.mixing(
-            [blockToUse, CreateItem.of(blockToUse, 0.1),Fluid.of("lava", 100), Fluid.of("water", 100)],
+            [blockToUse, CreateItem.of(blockToUse, 0.33),Fluid.of("lava", 100), Fluid.of("water", 100)],
             [blockToUse, Fluid.of("lava", 100), Fluid.of("water", 100)]
-        );
+        ).superheated;
     }
     
 })
