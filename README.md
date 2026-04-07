@@ -3,5 +3,7 @@ This repository contains KubeJS scripts that I've written for use in [CreateVill
 
 I created this because I kept running into issues with sharing scripts on the pack's Discord server. There were plans to reset the server and tweak the modpack to fix some balance issues, and I wanted to show that it was possible to replace the block generator mod it had with something that was better balanced, implemented generation methods for blocks that had fluid-based methods but weren't supported (e.g. concrete) and didn't require adding any new mods (other than KubeJS and its addons).
 
-## Requirements
+## Requirements & Usage
 Unless stated otherwise, all scripts require KubeJS and KubeJS Create, plus their dependencies.
+
+If you want to test the scripts for yourself, install CreateVillage as normal, add the required mods to it and place the contents of `server_scripts` in `minecraft/kubejs/server_scripts` within the pack. If you don't have a `kubejs` or `server_scripts` folder, add them manually or run the game until it reaches the main menu and quit.
