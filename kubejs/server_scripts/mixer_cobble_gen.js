@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
         event.recipes.create.mixing(
             [blockToUse, CreateItem.of(blockToUse, 0.33),Fluid.of("lava", 100), Fluid.of("water", 100)],
             [blockToUse, Fluid.of("lava", 100), Fluid.of("water", 100)]
-        ).superheated;
+        ).superheated();
     }
     
 })
