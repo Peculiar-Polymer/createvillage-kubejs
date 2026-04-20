@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
         "black_concrete"
     ]
 
-    const basicCobbleGenBlocks = ["2x minecraft:cobblestone", "2x minecraft:stone", "create:limestone"]
+    const basicCobbleGenBlocks = ["minecraft:cobblestone", "2x minecraft:stone", "create:limestone"]
 
     const cobbleGenGaloreBlocks = ["create:crimsite", "create:asurine", "create:veridium", "create:ochrum"]
     // these blocks (except ochrum) could be generated via cobblegen galore
@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
     for (let index = 0; index < cobbleGenGaloreBlocks.length; index++) {
         var blockToUse = cobbleGenGaloreBlocks[index]
         event.recipes.create.mixing(
-            [blockToUse, CreateItem.of(blockToUse, 0.33),Fluid.of("lava", 100), Fluid.of("water", 100)],
+            [blockToUse, CreateItem.of("2x " + blockToUse, 0.33),Fluid.of("lava", 100), Fluid.of("water", 100)],
             [blockToUse, Fluid.of("lava", 100), Fluid.of("water", 100)]
         ).superheated();
     }
