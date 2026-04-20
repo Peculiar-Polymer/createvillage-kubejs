@@ -10,6 +10,7 @@ ServerEvents.tags('item', event => {
         "minecraft:maintains_farmland",
         "minecraft:chicken_food",
         "minecraft:parrot_food",
+        "minecraft:crops",
         "minecraft:bee_growables",
         "minecraft:sword_efficient",
         "quark:hoe_harvestable"
