@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
     event.replaceOutput({output: "create:dough"}, "create:dough", "farmersdelight:wheat_dough");
 
     // modify create recipes that use create dough so they can still be used
-    const doughInputRecipeOutputs = ["minecraft:cake", "createaddition:cake_base"];
+    const doughInputRecipeOutputs = ["minecraft:cake", "createaddition:cake_base", "minecraft:slime_ball"];
     
     doughInputRecipeOutputs.forEach(element => {
         event.replaceInput({output: element}, "create:dough", "farmersdelight:wheat_dough");
